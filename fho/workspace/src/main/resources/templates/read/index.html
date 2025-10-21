@@ -10,6 +10,10 @@
 <form id="form1" th:action="@{/insert}" method="post" enctype="multipart/form-data">
 	
 	<select name="year">
+		<option value="2028" th:selected="${year == '2028'}">2028</option>
+		<option value="2027" th:selected="${year == '2027'}">2027</option>
+		<option value="2026" th:selected="${year == '2026'}">2026</option>
+		<option value="2025" th:selected="${year == '2025'}">2025</option>
 		<option value="2024" th:selected="${year == '2024'}">2024</option>
 		<option value="2023" th:selected="${year == '2023'}">2023</option>
 		<option value="2022" th:selected="${year == '2022'}">2022</option>
